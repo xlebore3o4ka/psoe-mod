@@ -17,6 +17,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.psoe.init.PsoeModItems;
+import net.mcreator.psoe.init.PsoeModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +39,8 @@ public class PsoeMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = context.getModEventBus();
+		PsoeModBlocks.REGISTRY.register(bus);
+		PsoeModItems.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

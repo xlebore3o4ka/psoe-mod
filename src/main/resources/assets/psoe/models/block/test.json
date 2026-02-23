@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "psoe:block/biez_nazvaniia140_20260206152242",
+    "up": "psoe:block/biez_nazvaniia140_20260206152242",
+    "north": "psoe:block/biez_nazvaniia140_20260206152242",
+    "east": "psoe:block/biez_nazvaniia140_20260206152242",
+    "south": "psoe:block/biez_nazvaniia140_20260206152242",
+    "west": "psoe:block/biez_nazvaniia140_20260206152242",
+    "particle": "psoe:block/biez_nazvaniia140_20260206152242"
+  },
+  "render_type": "solid"
+}
