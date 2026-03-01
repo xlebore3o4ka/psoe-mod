@@ -123,60 +123,6 @@
       "path": "~/content/mercury"
     },
     {
-      "name": "Sfgdjkfgdnbhkj",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sfgdjkfgdnbhkj",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/psoe/block/SfgdjkfgdnbhkjBlock.java",
-          "src/main/resources/assets/psoe/models/block/sfgdjkfgdnbhkj.json",
-          "src/main/resources/data/psoe/loot_tables/blocks/sfgdjkfgdnbhkj.json",
-          "src/main/resources/assets/psoe/blockstates/sfgdjkfgdnbhkj.json",
-          "src/main/resources/assets/psoe/models/item/sfgdjkfgdnbhkj.json"
-        ]
-      }
-    },
-    {
-      "name": "SfgdjkfgdnbhkjPriShchielchkiePKMPoBloku",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sfgdjkfgdnbhkj_pri_shchielchkie_pkm_po_bloku",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/psoe/procedures/SfgdjkfgdnbhkjPriShchielchkiePKMPoBlokuProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "SulfurAcid",
       "type": "item",
       "compiles": true,
@@ -231,7 +177,6 @@
       "block.psoe.cinnabar": "Киноварь",
       "item_group.psoe.psoe_tab": "Псое",
       "item.psoe.mercury": "Ртуть",
-      "block.psoe.sfgdjkfgdnbhkj": "Sfgdjkfgdnbhkj",
       "item.psoe.sulfur_acid": "Sulfur Acid"
     }
   },
@@ -239,8 +184,8 @@
     "files": [
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
-      "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/java/net/mcreator/psoe/PsoeMod.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta"
     ]

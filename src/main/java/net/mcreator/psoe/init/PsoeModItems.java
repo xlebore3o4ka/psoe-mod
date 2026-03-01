@@ -20,13 +20,11 @@ public class PsoeModItems {
 	public static final RegistryObject<Item> TEST;
 	public static final RegistryObject<Item> CINNABAR;
 	public static final RegistryObject<Item> MERCURY;
-	public static final RegistryObject<Item> SFGDJKFGDNBHKJ;
 	public static final RegistryObject<Item> SULFUR_ACID;
 	static {
 		TEST = block(PsoeModBlocks.TEST);
 		CINNABAR = block(PsoeModBlocks.CINNABAR);
 		MERCURY = REGISTRY.register("mercury", MercuryItem::new);
-		SFGDJKFGDNBHKJ = block(PsoeModBlocks.SFGDJKFGDNBHKJ);
 		SULFUR_ACID = REGISTRY.register("sulfur_acid", SulfurAcidItem::new);
 	}
 
