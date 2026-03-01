@@ -13,6 +13,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.psoe.item.SulfurAcidItem;
 import net.mcreator.psoe.item.MercuryItem;
+import net.mcreator.psoe.item.HydrogenItem;
 import net.mcreator.psoe.PsoeMod;
 
 public class PsoeModItems {
@@ -21,11 +22,13 @@ public class PsoeModItems {
 	public static final RegistryObject<Item> CINNABAR;
 	public static final RegistryObject<Item> MERCURY;
 	public static final RegistryObject<Item> SULFUR_ACID;
+	public static final RegistryObject<Item> HYDROGEN;
 	static {
 		TEST = block(PsoeModBlocks.TEST);
 		CINNABAR = block(PsoeModBlocks.CINNABAR);
 		MERCURY = REGISTRY.register("mercury", MercuryItem::new);
 		SULFUR_ACID = REGISTRY.register("sulfur_acid", SulfurAcidItem::new);
+		HYDROGEN = REGISTRY.register("hydrogen", HydrogenItem::new);
 	}
 
 	// Start of user code block custom items

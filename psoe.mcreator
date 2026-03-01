@@ -158,6 +158,20 @@
         ]
       },
       "path": "~/content/SulfurAcid"
+    },
+    {
+      "name": "Hydrogen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/psoe/models/item/hydrogen.json",
+          "src/main/java/net/mcreator/psoe/item/HydrogenItem.java"
+        ]
+      },
+      "path": "~/content/Electrolysis"
     }
   ],
   "variable_elements": [],
@@ -177,15 +191,16 @@
       "block.psoe.cinnabar": "Киноварь",
       "item_group.psoe.psoe_tab": "Псое",
       "item.psoe.mercury": "Ртуть",
-      "item.psoe.sulfur_acid": "Sulfur Acid"
+      "item.psoe.sulfur_acid": "Sulfur Acid",
+      "item.psoe.hydrogen": "Водород"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
-      "src/main/java/net/mcreator/psoe/PsoeMod.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
+      "src/main/java/net/mcreator/psoe/PsoeMod.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
@@ -210,6 +225,10 @@
           },
           {
             "name": "SulfurAcid",
+            "children": []
+          },
+          {
+            "name": "Electrolysis",
             "children": []
           }
         ]

@@ -3,5 +3,6 @@
   "block.psoe.cinnabar": "Киноварь",
   "item_group.psoe.psoe_tab": "Псое",
   "item.psoe.mercury": "Ртуть",
-  "item.psoe.sulfur_acid": "Sulfur Acid"
+  "item.psoe.sulfur_acid": "Sulfur Acid",
+  "item.psoe.hydrogen": "Водород"
 }
