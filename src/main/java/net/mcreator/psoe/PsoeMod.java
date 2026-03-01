@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.psoe.init.PsoeModTabs;
 import net.mcreator.psoe.init.PsoeModItems;
 import net.mcreator.psoe.init.PsoeModBlocks;
 
@@ -41,6 +42,7 @@ public class PsoeMod {
 		IEventBus bus = context.getModEventBus();
 		PsoeModBlocks.REGISTRY.register(bus);
 		PsoeModItems.REGISTRY.register(bus);
+		PsoeModTabs.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

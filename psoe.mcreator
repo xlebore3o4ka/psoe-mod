@@ -14,22 +14,232 @@
           "src/main/resources/assets/psoe/models/block/test.json",
           "src/main/resources/assets/psoe/blockstates/test.json"
         ]
+      },
+      "path": "~/content"
+    },
+    {
+      "name": "Cinnabar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinnabar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/psoe/worldgen/configured_feature/cinnabar.json",
+          "src/main/resources/data/psoe/forge/biome_modifier/cinnabar_biome_modifier.json",
+          "src/main/resources/data/psoe/worldgen/placed_feature/cinnabar.json",
+          "src/main/resources/data/psoe/loot_tables/blocks/cinnabar.json",
+          "src/main/resources/assets/psoe/blockstates/cinnabar.json",
+          "src/main/resources/assets/psoe/models/item/cinnabar.json",
+          "src/main/resources/assets/psoe/models/block/cinnabar.json",
+          "src/main/java/net/mcreator/psoe/block/CinnabarBlock.java"
+        ]
+      },
+      "path": "~/content/Cinnabar"
+    },
+    {
+      "name": "PsoeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "psoe_tab",
+      "metadata": {
+        "files": []
       }
+    },
+    {
+      "name": "CinnabarSmelter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinnabar_smelter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/psoe/advancements/recipes/cinnabar_smelter.json",
+          "src/main/resources/data/psoe/recipes/cinnabar_smelter.json"
+        ]
+      },
+      "path": "~/content/Cinnabar"
+    },
+    {
+      "name": "CinnabarBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinnabar_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/psoe/recipes/cinnabar_blasting.json",
+          "src/main/resources/data/psoe/advancements/recipes/cinnabar_blasting.json"
+        ]
+      },
+      "path": "~/content/Cinnabar"
+    },
+    {
+      "name": "BlockOnSideWithOffsetProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_on_side_with_offset_proc",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/BlockOnSideWithOffsetProcProcedure.java"
+        ]
+      },
+      "path": "~/proc"
+    },
+    {
+      "name": "BlocksAroundDirectedBlockProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocks_around_directed_block_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/BlocksAroundDirectedBlockProcProcedure.java"
+        ]
+      },
+      "path": "~/proc"
+    },
+    {
+      "name": "Mercury",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mercury",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/item/MercuryItem.java",
+          "src/main/resources/assets/psoe/models/item/mercury.json"
+        ]
+      },
+      "path": "~/content/mercury"
+    },
+    {
+      "name": "Sfgdjkfgdnbhkj",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sfgdjkfgdnbhkj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/block/SfgdjkfgdnbhkjBlock.java",
+          "src/main/resources/assets/psoe/models/block/sfgdjkfgdnbhkj.json",
+          "src/main/resources/data/psoe/loot_tables/blocks/sfgdjkfgdnbhkj.json",
+          "src/main/resources/assets/psoe/blockstates/sfgdjkfgdnbhkj.json",
+          "src/main/resources/assets/psoe/models/item/sfgdjkfgdnbhkj.json"
+        ]
+      }
+    },
+    {
+      "name": "SfgdjkfgdnbhkjPriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sfgdjkfgdnbhkj_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/SfgdjkfgdnbhkjPriShchielchkiePKMPoBlokuProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SulfurAcid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_acid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/psoe/models/item/sulfur_acid.json",
+          "src/main/java/net/mcreator/psoe/item/SulfurAcidItem.java"
+        ]
+      },
+      "path": "~/content/SulfurAcid"
+    },
+    {
+      "name": "SulfurAcidConsumeProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfur_acid_consume_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/SulfurAcidConsumeProcProcedure.java"
+        ]
+      },
+      "path": "~/content/SulfurAcid"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Cinnabar"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Cinnabar"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "block.psoe.test": "Test"
+      "block.psoe.test": "Test",
+      "block.psoe.cinnabar": "Киноварь",
+      "item_group.psoe.psoe_tab": "Псое",
+      "item.psoe.mercury": "Ртуть",
+      "block.psoe.sfgdjkfgdnbhkj": "Sfgdjkfgdnbhkj",
+      "item.psoe.sulfur_acid": "Sulfur Acid"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/java/net/mcreator/psoe/PsoeMod.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta"
@@ -37,7 +247,29 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "proc",
+        "children": []
+      },
+      {
+        "name": "content",
+        "children": [
+          {
+            "name": "mercury",
+            "children": []
+          },
+          {
+            "name": "Cinnabar",
+            "children": []
+          },
+          {
+            "name": "SulfurAcid",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "psoe",

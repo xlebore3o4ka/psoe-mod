@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "psoe:block/cinnabar",
+    "up": "psoe:block/cinnabar",
+    "north": "psoe:block/cinnabar",
+    "east": "psoe:block/cinnabar",
+    "south": "psoe:block/cinnabar",
+    "west": "psoe:block/cinnabar",
+    "particle": "psoe:block/cinnabar"
+  },
+  "render_type": "solid"
+}
