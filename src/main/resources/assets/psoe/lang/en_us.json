@@ -3,6 +3,8 @@
   "block.psoe.cinnabar": "Киноварь",
   "item_group.psoe.psoe_tab": "Псое",
   "item.psoe.mercury": "Ртуть",
-  "item.psoe.sulfur_acid": "Sulfur Acid",
-  "item.psoe.hydrogen": "Водород"
+  "item.psoe.hydrogen": "Водород",
+  "block.psoe.furnace_interface": "Интерфейс печи",
+  "item.psoe.oxygen": "Кислород",
+  "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь"
 }

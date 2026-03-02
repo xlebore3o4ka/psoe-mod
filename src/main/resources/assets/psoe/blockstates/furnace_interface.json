@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "psoe:block/furnace_interface"
+    },
+    "facing=east": {
+      "model": "psoe:block/furnace_interface",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "psoe:block/furnace_interface",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "psoe:block/furnace_interface",
+      "y": 270
+    }
+  }
+}

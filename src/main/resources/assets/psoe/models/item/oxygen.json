@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "psoe:item/sulphuric_acid"
+    "layer0": "psoe:item/oxygen"
   }
 }

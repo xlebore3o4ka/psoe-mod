@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "psoe:blocks/furnace_interface",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "psoe:furnace_interface"
+        }
+      ]
+    }
+  ]
+}

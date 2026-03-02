@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.psoe.item.SulfurAcidItem;
+import net.mcreator.psoe.item.OxygenItem;
 import net.mcreator.psoe.item.MercuryItem;
 import net.mcreator.psoe.item.HydrogenItem;
 import net.mcreator.psoe.PsoeMod;
@@ -21,14 +21,16 @@ public class PsoeModItems {
 	public static final RegistryObject<Item> TEST;
 	public static final RegistryObject<Item> CINNABAR;
 	public static final RegistryObject<Item> MERCURY;
-	public static final RegistryObject<Item> SULFUR_ACID;
 	public static final RegistryObject<Item> HYDROGEN;
+	public static final RegistryObject<Item> FURNACE_INTERFACE;
+	public static final RegistryObject<Item> OXYGEN;
 	static {
 		TEST = block(PsoeModBlocks.TEST);
 		CINNABAR = block(PsoeModBlocks.CINNABAR);
 		MERCURY = REGISTRY.register("mercury", MercuryItem::new);
-		SULFUR_ACID = REGISTRY.register("sulfur_acid", SulfurAcidItem::new);
 		HYDROGEN = REGISTRY.register("hydrogen", HydrogenItem::new);
+		FURNACE_INTERFACE = block(PsoeModBlocks.FURNACE_INTERFACE);
+		OXYGEN = REGISTRY.register("oxygen", OxygenItem::new);
 	}
 
 	// Start of user code block custom items

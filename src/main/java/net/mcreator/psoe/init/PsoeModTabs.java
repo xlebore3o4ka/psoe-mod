@@ -19,7 +19,8 @@ public class PsoeModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.psoe.psoe_tab")).icon(() -> new ItemStack(PsoeModBlocks.CINNABAR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PsoeModBlocks.CINNABAR.get().asItem());
 				tabData.accept(PsoeModItems.MERCURY.get());
-				tabData.accept(PsoeModItems.SULFUR_ACID.get());
 				tabData.accept(PsoeModItems.HYDROGEN.get());
+				tabData.accept(PsoeModBlocks.FURNACE_INTERFACE.get().asItem());
+				tabData.accept(PsoeModItems.OXYGEN.get());
 			}).build());
 }

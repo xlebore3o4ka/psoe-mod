@@ -76,20 +76,6 @@
       "path": "~/content/Cinnabar"
     },
     {
-      "name": "BlockOnSideWithOffsetProc",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "block_on_side_with_offset_proc",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/psoe/procedures/BlockOnSideWithOffsetProcProcedure.java"
-        ]
-      },
-      "path": "~/proc"
-    },
-    {
       "name": "BlocksAroundDirectedBlockProc",
       "type": "procedure",
       "compiles": true,
@@ -123,43 +109,6 @@
       "path": "~/content/mercury"
     },
     {
-      "name": "SulfurAcid",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sulfur_acid",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/psoe/models/item/sulfur_acid.json",
-          "src/main/java/net/mcreator/psoe/item/SulfurAcidItem.java"
-        ]
-      },
-      "path": "~/content/SulfurAcid"
-    },
-    {
-      "name": "SulfurAcidConsumeProc",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sulfur_acid_consume_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/psoe/procedures/SulfurAcidConsumeProcProcedure.java"
-        ]
-      },
-      "path": "~/content/SulfurAcid"
-    },
-    {
       "name": "Hydrogen",
       "type": "item",
       "compiles": true,
@@ -172,15 +121,98 @@
         ]
       },
       "path": "~/content/Electrolysis"
+    },
+    {
+      "name": "FurnaceInterfaceProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_interface_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/FurnaceInterfaceProcProcedure.java"
+        ]
+      },
+      "path": "~/content/Multyblocks/Furnaces/BloomeryFurnace"
+    },
+    {
+      "name": "FurnaceInterface",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_interface",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/psoe/loot_tables/blocks/furnace_interface.json",
+          "src/main/resources/assets/psoe/models/item/furnace_interface.json",
+          "src/main/resources/assets/psoe/blockstates/furnace_interface.json",
+          "src/main/resources/assets/psoe/models/block/furnace_interface.json",
+          "src/main/java/net/mcreator/psoe/block/entity/FurnaceInterfaceBlockEntity.java",
+          "src/main/java/net/mcreator/psoe/block/FurnaceInterfaceBlock.java"
+        ]
+      },
+      "path": "~/content/Multyblocks/Furnaces/BloomeryFurnace"
+    },
+    {
+      "name": "Oxygen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oxygen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/item/OxygenItem.java",
+          "src/main/resources/assets/psoe/models/item/oxygen.json"
+        ]
+      },
+      "path": "~/content/Electrolysis"
+    },
+    {
+      "name": "FurnaceInterfaceGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_interface_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/client/gui/FurnaceInterfaceGuiScreen.java",
+          "src/main/java/net/mcreator/psoe/world/inventory/FurnaceInterfaceGuiMenu.java"
+        ]
+      },
+      "path": "~/content/Multyblocks/Furnaces/BloomeryFurnace"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
     ]
   },
@@ -191,13 +223,19 @@
       "block.psoe.cinnabar": "Киноварь",
       "item_group.psoe.psoe_tab": "Псое",
       "item.psoe.mercury": "Ртуть",
-      "item.psoe.sulfur_acid": "Sulfur Acid",
-      "item.psoe.hydrogen": "Водород"
+      "item.psoe.hydrogen": "Водород",
+      "block.psoe.furnace_interface": "Интерфейс печи",
+      "item.psoe.oxygen": "Кислород",
+      "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/psoe/init/PsoeModScreens.java",
+      "src/main/java/net/mcreator/psoe/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModMenus.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModBlockEntities.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/java/net/mcreator/psoe/PsoeMod.java",
@@ -224,12 +262,22 @@
             "children": []
           },
           {
-            "name": "SulfurAcid",
+            "name": "Electrolysis",
             "children": []
           },
           {
-            "name": "Electrolysis",
-            "children": []
+            "name": "Multyblocks",
+            "children": [
+              {
+                "name": "Furnaces",
+                "children": [
+                  {
+                    "name": "BloomeryFurnace",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

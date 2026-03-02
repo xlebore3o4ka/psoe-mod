@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sulphuric_acid",
+    "texture": "oxygen",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Sulfur Acid",
-    "rarity": "UNCOMMON",
+    "name": "Кислород",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:PsoeTab"
@@ -18,7 +18,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -39,9 +39,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onFinishUsingItem": {
-      "name": "SulfurAcidConsumeProc"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -49,15 +46,15 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
-      "value": "Items.GLASS_BOTTLE"
+      "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "drink",
+    "animation": "none",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""

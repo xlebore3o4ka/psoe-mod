@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.psoe.block.TestBlock;
+import net.mcreator.psoe.block.FurnaceInterfaceBlock;
 import net.mcreator.psoe.block.CinnabarBlock;
 import net.mcreator.psoe.PsoeMod;
 
@@ -17,9 +18,11 @@ public class PsoeModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PsoeMod.MODID);
 	public static final RegistryObject<Block> TEST;
 	public static final RegistryObject<Block> CINNABAR;
+	public static final RegistryObject<Block> FURNACE_INTERFACE;
 	static {
 		TEST = REGISTRY.register("test", TestBlock::new);
 		CINNABAR = REGISTRY.register("cinnabar", CinnabarBlock::new);
+		FURNACE_INTERFACE = REGISTRY.register("furnace_interface", FurnaceInterfaceBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
