@@ -251,16 +251,38 @@
         ]
       },
       "path": "~/content"
+    },
+    {
+      "name": "GexBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gex_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/psoe/models/item/gex_block.json",
+          "src/main/resources/data/psoe/loot_tables/blocks/gex_block.json",
+          "src/main/resources/assets/psoe/models/block/gex_block.json",
+          "src/main/java/net/mcreator/psoe/block/GexBlockBlock.java",
+          "src/main/resources/data/psoe/forge/biome_modifier/gex_block_biome_modifier.json",
+          "src/main/resources/data/psoe/worldgen/configured_feature/gex_block.json",
+          "src/main/resources/assets/psoe/blockstates/gex_block.json",
+          "src/main/resources/data/psoe/worldgen/placed_feature/gex_block.json"
+        ]
+      },
+      "path": "~/content/Gex"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:GexBlock",
       "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:GexBlock",
       "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
     ]
@@ -275,19 +297,20 @@
       "item.psoe.hydrogen": "Водород",
       "block.psoe.furnace_interface": "Интерфейс печи",
       "item.psoe.oxygen": "Кислород",
-      "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь"
+      "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь",
+      "block.psoe.gex_block": "Гексовый блок"
     }
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/psoe/init/PsoeModScreens.java",
-      "src/main/java/net/mcreator/psoe/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModMenus.java",
+      "src/main/java/net/mcreator/psoe/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModScreens.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModBlockEntities.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
-      "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/java/net/mcreator/psoe/PsoeMod.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
@@ -327,6 +350,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Gex",
+            "children": []
           }
         ]
       }
