@@ -8,10 +8,10 @@
       "registry_name": "test",
       "metadata": {
         "files": [
-          "src/main/resources/assets/psoe/models/block/test.json",
-          "src/main/java/net/mcreator/psoe/block/TestBlock.java",
           "src/main/resources/assets/psoe/models/item/test.json",
           "src/main/resources/data/psoe/loot_tables/blocks/test.json",
+          "src/main/java/net/mcreator/psoe/block/TestBlock.java",
+          "src/main/resources/assets/psoe/models/block/test.json",
           "src/main/resources/assets/psoe/blockstates/test.json"
         ]
       },
@@ -211,17 +211,66 @@
       "registry_name": "gex_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/psoe/models/item/gex_block.json",
           "src/main/resources/data/psoe/loot_tables/blocks/gex_block.json",
-          "src/main/resources/assets/psoe/models/block/gex_block.json",
-          "src/main/java/net/mcreator/psoe/block/GexBlockBlock.java",
-          "src/main/resources/data/psoe/forge/biome_modifier/gex_block_biome_modifier.json",
           "src/main/resources/data/psoe/worldgen/configured_feature/gex_block.json",
-          "src/main/resources/assets/psoe/blockstates/gex_block.json",
-          "src/main/resources/data/psoe/worldgen/placed_feature/gex_block.json"
+          "src/main/java/net/mcreator/psoe/block/GexBlockBlock.java",
+          "src/main/resources/assets/psoe/models/block/gex_block.json",
+          "src/main/resources/data/psoe/forge/biome_modifier/gex_block_biome_modifier.json",
+          "src/main/resources/data/psoe/worldgen/placed_feature/gex_block.json",
+          "src/main/resources/assets/psoe/models/item/gex_block.json",
+          "src/main/resources/assets/psoe/blockstates/gex_block.json"
         ]
       },
-      "path": "~/content/Gex"
+      "path": "~/content"
+    },
+    {
+      "name": "TestGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/client/gui/TestGUIScreen.java",
+          "src/main/java/net/mcreator/psoe/world/inventory/TestGUIMenu.java"
+        ]
+      },
+      "path": "~/content"
+    },
+    {
+      "name": "TestBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/psoe/procedures/TestBreakProcedure.java"
+        ]
+      },
+      "path": "~/content"
     }
   ],
   "variable_elements": [],
@@ -254,14 +303,14 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/psoe/init/PsoeModMenus.java",
-      "src/main/java/net/mcreator/psoe/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModScreens.java",
+      "src/main/java/net/mcreator/psoe/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/psoe/init/PsoeModMenus.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModBlocks.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModBlockEntities.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModItems.java",
-      "src/main/java/net/mcreator/psoe/PsoeMod.java",
       "src/main/java/net/mcreator/psoe/init/PsoeModTabs.java",
+      "src/main/java/net/mcreator/psoe/PsoeMod.java",
       "src/main/resources/META-INF/mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
@@ -301,10 +350,6 @@
                 ]
               }
             ]
-          },
-          {
-            "name": "Gex",
-            "children": []
           }
         ]
       }

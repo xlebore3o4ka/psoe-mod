@@ -10,6 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.psoe.client.gui.TestGUIScreen;
 import net.mcreator.psoe.client.gui.FurnaceInterfaceGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -18,6 +19,7 @@ public class PsoeModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(PsoeModMenus.FURNACE_INTERFACE_GUI.get(), FurnaceInterfaceGuiScreen::new);
+			MenuScreens.register(PsoeModMenus.TEST_GUI.get(), TestGUIScreen::new);
 		});
 	}
 

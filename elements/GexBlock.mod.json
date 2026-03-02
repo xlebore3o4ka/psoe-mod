@@ -146,13 +146,7 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.ICE"
-      },
-      {
-        "value": "Blocks.PACKED_ICE"
-      },
-      {
-        "value": "Blocks.FROSTED_ICE"
+        "value": "TAG:minecraft:mineable/pickaxe"
       },
       {
         "value": "Blocks.BLUE_ICE"
@@ -161,7 +155,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 2,
     "frequencyOnChunk": 5,
-    "minGenerateHeight": 60,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": 30,
+    "maxGenerateHeight": 355
   }
 }

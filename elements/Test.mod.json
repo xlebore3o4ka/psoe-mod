@@ -10,8 +10,8 @@
     "textureBack": "biez_nazvaniia140_20260206152242",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
-    "enablePitch": false,
+    "rotationMode": 1,
+    "enablePitch": true,
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "animations": [],
@@ -46,7 +46,7 @@
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "hasBlockItem": true,
     "maxStackSize": 64,
     "rarity": "EPIC",
@@ -58,13 +58,13 @@
     },
     "dropAmount": 10,
     "xpAmountMin": 0,
-    "xpAmountMax": 0,
+    "xpAmountMax": 5,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": true,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 12,
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
@@ -75,7 +75,7 @@
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
     "creativePickItem": {
-      "value": ""
+      "value": "Blocks.STAINED_GLASS_PANE#5"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -93,7 +93,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "SLIME"
     },
     "breakSound": {
       "value": ""
@@ -135,6 +135,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "TestBreak"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

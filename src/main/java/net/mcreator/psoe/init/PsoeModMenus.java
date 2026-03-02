@@ -15,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.psoe.world.inventory.TestGUIMenu;
 import net.mcreator.psoe.world.inventory.FurnaceInterfaceGuiMenu;
 import net.mcreator.psoe.network.MenuStateUpdateMessage;
 import net.mcreator.psoe.PsoeMod;
@@ -24,6 +25,7 @@ import java.util.Map;
 public class PsoeModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, PsoeMod.MODID);
 	public static final RegistryObject<MenuType<FurnaceInterfaceGuiMenu>> FURNACE_INTERFACE_GUI = REGISTRY.register("furnace_interface_gui", () -> IForgeMenuType.create(FurnaceInterfaceGuiMenu::new));
+	public static final RegistryObject<MenuType<TestGUIMenu>> TEST_GUI = REGISTRY.register("test_gui", () -> IForgeMenuType.create(TestGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
