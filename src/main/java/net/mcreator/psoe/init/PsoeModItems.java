@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -26,7 +27,7 @@ public class PsoeModItems {
 	public static final RegistryObject<Item> OXYGEN;
 	public static final RegistryObject<Item> GEX_BLOCK;
 	static {
-		TEST = block(PsoeModBlocks.TEST);
+		TEST = block(PsoeModBlocks.TEST, new Item.Properties().rarity(Rarity.EPIC));
 		CINNABAR = block(PsoeModBlocks.CINNABAR);
 		MERCURY = REGISTRY.register("mercury", MercuryItem::new);
 		HYDROGEN = REGISTRY.register("hydrogen", HydrogenItem::new);
