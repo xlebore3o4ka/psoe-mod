@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "psoe:gex_block",
     "psoe:furnace_interface",
     "psoe:cinnabar"
   ]
