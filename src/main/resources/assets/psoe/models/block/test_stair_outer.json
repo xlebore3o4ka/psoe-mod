@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "psoe:block/biez_nazvaniia140_20260206152242",
+    "bottom": "psoe:block/biez_nazvaniia140_20260206152242",
+    "top": "psoe:block/biez_nazvaniia140_20260206152242",
+    "side": "psoe:block/biez_nazvaniia140_20260206152242"
+  },
+  "render_type": "solid"
+}

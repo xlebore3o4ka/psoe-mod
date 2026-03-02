@@ -7,5 +7,6 @@
   "block.psoe.furnace_interface": "Интерфейс печи",
   "item.psoe.oxygen": "Кислород",
   "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь",
-  "block.psoe.gex_block": "Гексовый блок"
+  "block.psoe.gex_block": "Гексовый блок",
+  "block.psoe.test_stair": "Test Stair"
 }

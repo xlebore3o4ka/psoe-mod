@@ -271,6 +271,25 @@
         ]
       },
       "path": "~/content/Gex"
+    },
+    {
+      "name": "TestStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_stair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/block/TestStairBlock.java",
+          "src/main/resources/assets/psoe/models/block/test_stair.json",
+          "src/main/resources/assets/psoe/models/item/test_stair.json",
+          "src/main/resources/assets/psoe/blockstates/test_stair.json",
+          "src/main/resources/assets/psoe/models/block/test_stair_inner.json",
+          "src/main/resources/assets/psoe/models/block/test_stair_outer.json",
+          "src/main/resources/data/psoe/loot_tables/blocks/test_stair.json"
+        ]
+      },
+      "path": "~/content"
     }
   ],
   "variable_elements": [],
@@ -285,6 +304,9 @@
       "~CUSTOM:GexBlock",
       "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:TestStair"
     ]
   },
   "tab_element_order": {},
@@ -298,7 +320,8 @@
       "block.psoe.furnace_interface": "Интерфейс печи",
       "item.psoe.oxygen": "Кислород",
       "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь",
-      "block.psoe.gex_block": "Гексовый блок"
+      "block.psoe.gex_block": "Гексовый блок",
+      "block.psoe.test_stair": "Test Stair"
     }
   },
   "metadata": {
