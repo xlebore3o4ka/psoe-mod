@@ -25,6 +25,51 @@
           "y": 128,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "furnace-thermometer.png",
+          "use1Xscale": false,
+          "x": 138,
+          "y": 34,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tiempieratura",
+          "text": {
+            "fixedValue": "Температура"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 22,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Mercury"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 141,
+          "y": 101,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

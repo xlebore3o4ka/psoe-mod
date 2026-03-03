@@ -51,6 +51,7 @@ public class FurnaceInterfaceGuiScreen extends AbstractContainerScreen<FurnaceIn
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(new ResourceLocation("psoe:textures/screens/furnace-thermometer.png"), this.leftPos + 12, this.topPos + 17, 0, 0, 24, 88, 24, 88);
 		RenderSystem.disableBlend();
 	}
 
@@ -66,6 +67,7 @@ public class FurnaceInterfaceGuiScreen extends AbstractContainerScreen<FurnaceIn
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.psoe.furnace_interface_gui.label_invientar"), 8, 111, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.psoe.furnace_interface_gui.label_tiempieratura"), 8, 5, -12829636, false);
 	}
 
 	@Override

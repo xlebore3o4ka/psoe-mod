@@ -6,5 +6,6 @@
   "item.psoe.hydrogen": "Водород",
   "block.psoe.furnace_interface": "Интерфейс печи",
   "item.psoe.oxygen": "Кислород",
-  "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь"
+  "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь",
+  "gui.psoe.furnace_interface_gui.label_tiempieratura": "Температура"
 }
