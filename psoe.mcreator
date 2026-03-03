@@ -251,18 +251,62 @@
         ]
       },
       "path": "~/content"
+    },
+    {
+      "name": "GexBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gex_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/psoe/loot_tables/blocks/gex_block.json",
+          "src/main/resources/data/psoe/worldgen/configured_feature/gex_block.json",
+          "src/main/java/net/mcreator/psoe/block/GexBlockBlock.java",
+          "src/main/resources/assets/psoe/models/block/gex_block.json",
+          "src/main/resources/data/psoe/forge/biome_modifier/gex_block_biome_modifier.json",
+          "src/main/resources/data/psoe/worldgen/placed_feature/gex_block.json",
+          "src/main/resources/assets/psoe/models/item/gex_block.json",
+          "src/main/resources/assets/psoe/blockstates/gex_block.json"
+        ]
+      },
+      "path": "~/content/Gex"
+    },
+    {
+      "name": "TestStair",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_stair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/psoe/block/TestStairBlock.java",
+          "src/main/resources/assets/psoe/models/block/test_stair_inner.json",
+          "src/main/resources/assets/psoe/models/block/test_stair_outer.json",
+          "src/main/resources/assets/psoe/blockstates/test_stair.json",
+          "src/main/resources/data/psoe/loot_tables/blocks/test_stair.json",
+          "src/main/resources/assets/psoe/models/block/test_stair.json",
+          "src/main/resources/assets/psoe/models/item/test_stair.json"
+        ]
+      },
+      "path": "~/content"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:GexBlock",
       "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:GexBlock",
       "~CUSTOM:FurnaceInterface",
       "~CUSTOM:Cinnabar"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:TestStair"
     ]
   },
   "tab_element_order": {},
@@ -276,7 +320,8 @@
       "block.psoe.furnace_interface": "Интерфейс печи",
       "item.psoe.oxygen": "Кислород",
       "gui.psoe.furnace_interface_gui.label_invientar": "Инвентарь",
-      "gui.psoe.furnace_interface_gui.label_tiempieratura": "Температура"
+      "block.psoe.gex_block": "Гексовый блок",
+      "block.psoe.test_stair": "Test Stair"
     }
   },
   "metadata": {
@@ -297,24 +342,8 @@
     "name": "~",
     "children": [
       {
-        "name": "proc",
-        "children": []
-      },
-      {
         "name": "content",
         "children": [
-          {
-            "name": "mercury",
-            "children": []
-          },
-          {
-            "name": "Cinnabar",
-            "children": []
-          },
-          {
-            "name": "Electrolysis",
-            "children": []
-          },
           {
             "name": "Multyblocks",
             "children": [
@@ -328,8 +357,28 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Gex",
+            "children": []
+          },
+          {
+            "name": "mercury",
+            "children": []
+          },
+          {
+            "name": "Cinnabar",
+            "children": []
+          },
+          {
+            "name": "Electrolysis",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "proc",
+        "children": []
       }
     ]
   },

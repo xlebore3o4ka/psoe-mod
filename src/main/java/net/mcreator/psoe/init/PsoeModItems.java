@@ -25,6 +25,8 @@ public class PsoeModItems {
 	public static final RegistryObject<Item> HYDROGEN;
 	public static final RegistryObject<Item> FURNACE_INTERFACE;
 	public static final RegistryObject<Item> OXYGEN;
+	public static final RegistryObject<Item> GEX_BLOCK;
+	public static final RegistryObject<Item> TEST_STAIR;
 	static {
 		TEST = block(PsoeModBlocks.TEST, new Item.Properties().rarity(Rarity.EPIC));
 		CINNABAR = block(PsoeModBlocks.CINNABAR);
@@ -32,6 +34,8 @@ public class PsoeModItems {
 		HYDROGEN = REGISTRY.register("hydrogen", HydrogenItem::new);
 		FURNACE_INTERFACE = block(PsoeModBlocks.FURNACE_INTERFACE);
 		OXYGEN = REGISTRY.register("oxygen", OxygenItem::new);
+		GEX_BLOCK = block(PsoeModBlocks.GEX_BLOCK);
+		TEST_STAIR = block(PsoeModBlocks.TEST_STAIR, new Item.Properties().stacksTo(2).rarity(Rarity.EPIC));
 	}
 
 	// Start of user code block custom items
